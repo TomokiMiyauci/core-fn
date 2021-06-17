@@ -1,3 +1,8 @@
+# [v1.0.0-beta.3](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2021-06-17)
+
+## ✨ New Features
+- [`a27d061`](https://github.com/TomokiMiyauci/core-fn/commit/a27d061)   Add String trimLeft, trimRight and trim functions
+
 # [v1.0.0-beta.2](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2021-06-17)
 
 ## ✨ New Features
