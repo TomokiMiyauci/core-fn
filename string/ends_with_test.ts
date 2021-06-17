@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { assertEquals } from "../dev_deps.ts";
-import { _endsWith } from "./endsWith.ts";
+import { _endsWith } from "./ends_with.ts";
 
 Deno.test("_endsWith", () => {
   const table: [string, string, boolean][] = [

@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { assertEquals } from "../dev_deps.ts";
-import { _startsWith } from "./startsWith.ts";
+import { _startsWith } from "./starts_with.ts";
 
 Deno.test("startsWith", () => {
   const table: [string, string, boolean][] = [
