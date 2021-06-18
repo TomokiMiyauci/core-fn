@@ -1,29 +1,5 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
-import { Space } from "../deps.ts";
-
-/**
- * Infer the string with the right ends of trimmed.
- *
- * @typeParam T - Any string
- * @returns String right ends of trimmed
- *
- * @remarks
- * The definition of space
- * - `''`
- * - `\n`
- * - `\t`
- *
- * @example
- * ```ts
- * TrimRight<'hello \n\t'> // 'hello'
- * ```
- *
- * @category `String`
- *
- * @beta
- */
-type TrimRight<T extends string> = T extends `${infer R}${Space}` ? TrimRight<R>
-  : T;
+import { trimEnd } from "./trim_end.ts";
 
 /**
  * Removes space from right ends of the string.
@@ -47,8 +23,6 @@ type TrimRight<T extends string> = T extends `${infer R}${Space}` ? TrimRight<R>
  *
  * @beta
  */
-const trimRight = <T extends string>(val: T): TrimRight<T> =>
-  val.trimRight() as TrimRight<T>;
+const trimRight = trimEnd;
 
 export { trimRight };
-export type { TrimRight };

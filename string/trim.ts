@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
-import { TrimLeft } from "./trim_left.ts";
-import { TrimRight } from "./trim_right.ts";
+import { TrimStart } from "./trim_start.ts";
+import { TrimEnd } from "./trim_end.ts";
 
 /**
  * Infer the trimmed string.
@@ -23,7 +23,7 @@ import { TrimRight } from "./trim_right.ts";
  *
  * @beta
  */
-type Trim<T extends string> = TrimLeft<TrimRight<T>>;
+type Trim<T extends string> = TrimStart<TrimEnd<T>>;
 
 /**
  * Removes whitespace from both ends of the string.
