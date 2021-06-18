@@ -1,7 +1,7 @@
 {
   "name": "core-fn",
   "description": "A collection of built-in object method and property as currying function",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.es.d.ts",

@@ -1,3 +1,9 @@
+# [v1.0.0-beta.5](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2021-06-18)
+
+## ✨ New Features
+- [`5b6c8c3`](https://github.com/TomokiMiyauci/core-fn/commit/5b6c8c3)   Add String.repeat function 
+- [`08bd098`](https://github.com/TomokiMiyauci/core-fn/commit/08bd098)   Add String.trimStart and String.trimEnd functions
+
 # [v1.0.0-beta.4](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2021-06-17)
 
 ## ✨ New Features
