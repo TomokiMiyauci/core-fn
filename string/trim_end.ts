@@ -26,7 +26,7 @@ type TrimEnd<T extends string> = T extends `${infer R}${Space}` ? TrimEnd<R>
   : T;
 
 /**
- * Removes space from right ends of the string.
+ * Removes the trailing white space and line terminator characters from a string.
  *
  * @param val - input string
  * @returns The result of `val.trimEnd()`
