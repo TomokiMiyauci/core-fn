@@ -8,3 +8,5 @@ export { trimRight } from "./trim_right.ts";
 export { toLowerCase } from "./to_lower_case.ts";
 export { toUpperCase } from "./to_upper_case.ts";
 export { repeat } from "./repeat.ts";
+export { trimEnd } from "./trim_end.ts";
+export { trimStart } from "./trim_start.ts";

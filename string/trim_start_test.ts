@@ -1,8 +1,8 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { assertEquals, assertEqualsType } from "../dev_deps.ts";
-import { TrimLeft, trimLeft } from "./trim_left.ts";
+import { TrimStart, trimStart } from "./trim_start.ts";
 
-Deno.test("trimLeft", () => {
+Deno.test("trimStart", () => {
   const table: [string, string][] = [
     ["", ""],
     ["         ", ""],
@@ -17,14 +17,14 @@ Deno.test("trimLeft", () => {
     ["   hello  world\n\n", "hello  world\n\n"],
   ];
   table.forEach(([val, expected]) => {
-    assertEquals(trimLeft(val), expected, `trimLeft(${val}) -> ${expected}`);
+    assertEquals(trimStart(val), expected, `trimStart(${val}) -> ${expected}`);
   });
 
-  assertEqualsType<"", TrimLeft<"">>();
-  assertEqualsType<"hello", TrimLeft<"hello">>();
-  assertEqualsType<"", TrimLeft<"\n">>();
-  assertEqualsType<"", TrimLeft<"\t">>();
-  assertEqualsType<"", TrimLeft<"\t\n ">>();
-  assertEqualsType<"hello ", TrimLeft<"hello ">>();
-  assertEqualsType<"hello\n\t ", TrimLeft<"\n\t hello\n\t ">>();
+  assertEqualsType<"", TrimStart<"">>();
+  assertEqualsType<"hello", TrimStart<"hello">>();
+  assertEqualsType<"", TrimStart<"\n">>();
+  assertEqualsType<"", TrimStart<"\t">>();
+  assertEqualsType<"", TrimStart<"\t\n ">>();
+  assertEqualsType<"hello ", TrimStart<"hello ">>();
+  assertEqualsType<"hello\n\t ", TrimStart<"\n\t hello\n\t ">>();
 });

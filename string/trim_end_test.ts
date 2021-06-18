@@ -1,8 +1,8 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { assertEquals, assertEqualsType } from "../dev_deps.ts";
-import { TrimRight, trimRight } from "./trim_right.ts";
+import { TrimEnd, trimEnd } from "./trim_end.ts";
 
-Deno.test("trimRight", () => {
+Deno.test("trimEnd", () => {
   const table: [string, string][] = [
     ["", ""],
     ["         ", ""],
@@ -17,14 +17,14 @@ Deno.test("trimRight", () => {
     ["   hello  world\n\n", "   hello  world"],
   ];
   table.forEach(([val, expected]) => {
-    assertEquals(trimRight(val), expected, `trimRight(${val}) -> ${expected}`);
+    assertEquals(trimEnd(val), expected, `trimEnd(${val}) -> ${expected}`);
   });
 
-  assertEqualsType<"", TrimRight<"">>();
-  assertEqualsType<"hello", TrimRight<"hello">>();
-  assertEqualsType<"", TrimRight<"\n">>();
-  assertEqualsType<"", TrimRight<"\t">>();
-  assertEqualsType<"", TrimRight<"\t\n ">>();
-  assertEqualsType<"hello", TrimRight<"hello ">>();
-  assertEqualsType<"\n\t hello", TrimRight<"\n\t hello\n\t ">>();
+  assertEqualsType<"", TrimEnd<"">>();
+  assertEqualsType<"hello", TrimEnd<"hello">>();
+  assertEqualsType<"", TrimEnd<"\n">>();
+  assertEqualsType<"", TrimEnd<"\t">>();
+  assertEqualsType<"", TrimEnd<"\t\n ">>();
+  assertEqualsType<"hello", TrimEnd<"hello ">>();
+  assertEqualsType<"\n\t hello", TrimEnd<"\n\t hello\n\t ">>();
 });
