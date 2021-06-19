@@ -1,3 +1,8 @@
+# [v1.0.0-beta.6](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2021-06-19)
+
+## ✨ New Features
+- [`b3339a1`](https://github.com/TomokiMiyauci/core-fn/commit/b3339a1)   Add String.match function
+
 # [v1.0.0-beta.5](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2021-06-18)
 
 ## ✨ New Features
