@@ -1,3 +1,8 @@
+# [v1.0.0-beta.7](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2021-06-19)
+
+## ✨ New Features
+- [`7116865`](https://github.com/TomokiMiyauci/core-fn/commit/7116865)   Add RegExp#exec function
+
 # [v1.0.0-beta.6](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2021-06-19)
 
 ## ✨ New Features
