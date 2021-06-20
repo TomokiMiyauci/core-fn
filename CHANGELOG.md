@@ -1,3 +1,8 @@
+# [v1.0.0-beta.8](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2021-06-20)
+
+## ✨ New Features
+- [`2924931`](https://github.com/TomokiMiyauci/core-fn/commit/2924931)   Add RegExp all property and methods
+
 # [v1.0.0-beta.7](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2021-06-19)
 
 ## ✨ New Features
