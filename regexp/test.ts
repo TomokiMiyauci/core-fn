@@ -1,7 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-
-const _test = (regExp: RegExp, val: string): boolean => regExp.test(val);
+import { test as _test } from "../non_curry/regexp/test.ts";
 
 /**
  * whether a given `string` matches a given regular expression.
@@ -22,4 +21,4 @@ const _test = (regExp: RegExp, val: string): boolean => regExp.test(val);
  */
 const test = curry(_test);
 
-export { _test, test };
+export { test };

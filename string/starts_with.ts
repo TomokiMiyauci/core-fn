@@ -1,13 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-
-/**
- * @internal
- */
-const _startsWith = <T extends string, U extends string>(
-  val: T,
-  target: U,
-): boolean => target.startsWith(val);
+import { startsWith as _startsWith } from "../non_curry/string/starts_with.ts";
 
 /**
  * Checks if a string starts with the provided substring.
@@ -29,4 +22,4 @@ const _startsWith = <T extends string, U extends string>(
  */
 const startsWith = curry(_startsWith);
 
-export { _startsWith, startsWith };
+export { startsWith };

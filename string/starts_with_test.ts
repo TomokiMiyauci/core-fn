@@ -1,19 +1,9 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
-import { assertEquals } from "../dev_deps.ts";
-import { _startsWith } from "./starts_with.ts";
+import { startsWith } from "./starts_with.ts";
+import { assertEqualsType } from "../dev_deps.ts";
 
 Deno.test("startsWith", () => {
-  const table: [string, string, boolean][] = [
-    ["", "", true],
-    ["hello", "hello world", true],
-    ["H", "hello", false],
-    ["Hello", "hello", false],
-  ];
-  table.forEach(([val, target, expected]) => {
-    assertEquals(
-      _startsWith(val, target),
-      expected,
-      `startsWith(${val}, ${target}) -> ${expected}`,
-    );
-  });
+  assertEqualsType<(val: string) => boolean>(startsWith(""));
+  assertEqualsType<boolean>(startsWith("")(""));
+  assertEqualsType<boolean>(startsWith("", ""));
 });

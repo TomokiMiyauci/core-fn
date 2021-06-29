@@ -1,8 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
-import { curry, tryCatch } from "../deps.ts";
-
-const _repeat = (count: number, val: string): string =>
-  tryCatch(() => val.repeat(count), "");
+import { curry } from "../deps.ts";
+import { repeat as _repeat } from "../non_curry/string/repeat.ts";
 
 /**
  * Returns a String value that is made from count copies appended together. If count is 0,
@@ -33,4 +31,4 @@ const _repeat = (count: number, val: string): string =>
  */
 const repeat = curry(_repeat);
 
-export { _repeat, repeat };
+export { repeat };

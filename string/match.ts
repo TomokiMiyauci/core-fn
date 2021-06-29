@@ -1,13 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-
-/**
- * @internal
- */
-const _match = (
-  matcher: string | RegExp,
-  val: string,
-): RegExpMatchArray | null => val.match(matcher);
+import { match as _match } from "../non_curry/string/match.ts";
 
 /**
  * Matches a string with a regular expression, and returns an array containing the results of that search.
@@ -24,4 +17,4 @@ const _match = (
  */
 const match = curry(_match);
 
-export { _match, match };
+export { match };
