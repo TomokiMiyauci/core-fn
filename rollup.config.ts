@@ -14,7 +14,7 @@ const external = Object.keys(dependencies);
 const replaceOption = {
   ".ts": "",
   "https://deno.land/x/curry@v1.0.0/mod": "curry-rice",
-  "https://deno.land/x/fonction@v2.0.0/mod": "fonction",
+  "https://deno.land/x/fonction@v2.1.0-beta.1/mod": "fonction",
   preventAssignment: true,
 };
 const config = [

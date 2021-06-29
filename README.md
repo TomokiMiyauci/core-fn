@@ -206,6 +206,10 @@ The module that bundles the dependencies is obtained from
 `dotAll`, `exec`, `flags`, `global`, `ignoreCase`, `lastIndex`, `multiline`,
 `source`, `sticky`, `test`, `unicode`
 
+### Common(Same method or property name)
+
+`includes`, `length`
+
 ## :green_heart: Supports
 
 > ie is no longer supported to reduce bundle size.
