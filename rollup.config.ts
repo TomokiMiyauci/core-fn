@@ -3,13 +3,12 @@ import { resolve } from "path";
 import { terser } from "rollup-plugin-terser";
 import replace from "@rollup/plugin-replace";
 import { dependencies, main, module } from "./package.json";
-import { keys } from "fonction";
 
 const baseDir = resolve(__dirname);
 const inputFilePath = resolve(baseDir, "mod.ts");
 const banner =
   "/*! Copyright (c) 2021-present the Core-fn authors. All rights reserved. MIT license. */";
-const external = keys(dependencies);
+const external = Object.keys(dependencies);
 
 const replaceOption = {
   ".ts": "",
