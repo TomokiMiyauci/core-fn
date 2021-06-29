@@ -1,3 +1,8 @@
+# [v1.0.0-beta.9](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2021-06-29)
+
+## ✨ New Features
+- [`38c828f`](https://github.com/TomokiMiyauci/core-fn/commit/38c828f)   Add Symbol#description
+
 # [v1.0.0-beta.8](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.7...v1.0.0-beta.8) (2021-06-20)
 
 ## ✨ New Features
