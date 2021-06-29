@@ -2715,9 +2715,11 @@ findup-sync@^4.0.0:
     resolve-dir "^1.0.1"
 
 fonction@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/fonction/-/fonction-1.8.1.tgz#914b3daa29dcc8d41acfd278d20cddbb33fe8134"
-  integrity sha512-CfiQWjwsvbnKetiOg0XPrxTK4rI+xq/+RuNv32cwnt37v66O4WL+vAUe7hrSRXMqavA2KLKSQBE+I7CBXd3yrQ==
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/fonction/-/fonction-1.9.0.tgz#3866621a5d6381c44e559db4a04d043253eecb96"
+  integrity sha512-kFt8/QbJdrVukhppuOwuSmNsAxfkl2LH9OygARP7pUfb7aJzJUoF7triyww6YjY40F/m9x+qoJX9zhEk2c6gjA==
+  dependencies:
+    curry-rice "^1.0.0"
 
 forever-agent@~0.6.1:
   version "0.6.1"
@@ -5045,9 +5047,9 @@ rollup-plugin-ts@^1.4.0:
     tslib "^2.2.0"
 
 rollup@^2.52.1:
-  version "2.52.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.52.1.tgz#dd1cc178d70cf35c48d943fc06fdc32d546e6876"
-  integrity sha512-/SPqz8UGnp4P1hq6wc9gdTqA2bXQXGx13TtoL03GBm6qGRI6Hm3p4Io7GeiHNLl0BsQAne1JNYY+q/apcY933w==
+  version "2.52.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.52.3.tgz#062fc3c85f67736d6758749310cfee64836c4e2a"
+  integrity sha512-QF3Sju8Kl2z0osI4unyOLyUudyhOMK6G0AeqJWgfiyigqLAlnNrfBcDWDx+f1cqn+JU2iIYVkDrgQ6/KtwEfrg==
   optionalDependencies:
     fsevents "~2.3.2"
 
