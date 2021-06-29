@@ -1,3 +1,8 @@
+# [v1.0.0-beta.11](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2021-06-29)
+
+## ✨ New Features
+- [`32ed8c4`](https://github.com/TomokiMiyauci/core-fn/commit/32ed8c4)   Add String, Array, TypedArray includes function
+
 # [v1.0.0-beta.10](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2021-06-29)
 
 ## ✨ New Features
