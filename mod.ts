@@ -2,3 +2,4 @@
 export * from "./string/mod.ts";
 export * from "./common/mod.ts";
 export * from "./regexp/mod.ts";
+export * from "./symbol/mod.ts";
