@@ -1,3 +1,9 @@
+# [v1.0.0-beta.10](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.9...v1.0.0-beta.10) (2021-06-29)
+
+## ✨ New Features
+- [`d9a11e7`](https://github.com/TomokiMiyauci/core-fn/commit/d9a11e7)   Add non currying version functions 
+- [`0966977`](https://github.com/TomokiMiyauci/core-fn/commit/0966977)   Export non currying version
+
 # [v1.0.0-beta.9](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.8...v1.0.0-beta.9) (2021-06-29)
 
 ## ✨ New Features

@@ -1,14 +1,18 @@
 {
   "name": "core-fn",
   "description": "A collection of built-in object method and property as currying function",
-  "version": "1.0.0-beta.9",
+  "version": "1.0.0-beta.10",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.es.d.ts",
   "typesVersions": {
     "*": {
-      "./": ["dist/index.es.d.ts"],
-      "non-curry": ["dist/non-curry/index.es.d.ts"]
+      "./": [
+        "dist/index.es.d.ts"
+      ],
+      "non-curry": [
+        "dist/non-curry/index.es.d.ts"
+      ]
     }
   },
   "exports": {
