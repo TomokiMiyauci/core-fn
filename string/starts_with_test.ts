@@ -17,3 +17,5 @@ Deno.test("startsWith", () => {
     );
   });
 });
+
+"".startsWith;
