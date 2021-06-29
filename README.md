@@ -16,7 +16,6 @@ A collection of built-in object method and property as currying function
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/core_fn/mod.ts)
 [![deno version](https://img.shields.io/badge/deno-^1.6.0-lightgrey?logo=deno)](https://github.com/denoland/deno)
 ![node support version](https://img.shields.io/badge/node-%5E6.17.0-yellow)
-![npm download](https://img.shields.io/npm/dw/core-fn?color=blue)
 
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/TomokiMiyauci/core-fn)
 [![dependencies Status](https://status.david-dm.org/gh/TomokiMiyauci/core-fn.svg)](https://david-dm.org/TomokiMiyauci/core-fn)
@@ -27,10 +26,15 @@ A collection of built-in object method and property as currying function
 ![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat)
 ![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B26231%2Fgithub.com%2FTomokiMiyauci%2Fcore-fn.svg?type=small)](https://app.fossa.com/projects/custom%2B26231%2Fgithub.com%2FTomokiMiyauci%2Fcore-fn?ref=badge_small)
 
 </div>
 
 ---
+
+The methods and properties of the build-in object are made independent as
+functions. All functions are currying and have no side effects such as
+exceptions.
 
 ## :sparkles: Features
 
@@ -45,6 +49,86 @@ A collection of built-in object method and property as currying function
 `core-fn` ([deno.land](https://deno.land/x/core_fn),
 [nest.land](https://nest.land/package/core_fn),
 [npm](https://www.npmjs.com/package/core-fn))
+
+## :question: Why
+
+This project provides all build-in object methods and properties as no
+side-effect currying functions.
+
+The differences with [core-js-pure](https://github.com/zloirock/core-js#readme)
+are as follows:
+
+- The goal of this project is not to become polifill. It is to provide small
+  basic functions for functional programming.
+
+- All functions are currying.
+
+- All functions have no side effects, do not raise exceptions, and return
+  values.
+
+This allows you to use the basic functions for functional programming without
+having to define them.
+
+For example, if you are going to use `String#replace` to convert a string, you
+can often make it a function to increase independence and testability.
+
+```ts
+const fallback = (val: string) => val.replace("https", "http");
+```
+
+A more generalized version of this function would look like this:
+
+```ts
+const replace = (from: string, to: string) =>
+  (val: string) => val.replace(from, to);
+const fallback = replace("https", "http");
+```
+
+This makes a generic replace function that can be used for other strings.
+
+```ts
+const shorten = replace("typescript", "ts");
+```
+
+However, the `replace` function is not easy to use. The `replace` function
+always requires two arguments.
+
+If you want to convert the string `typescript` to `javascript` and `ts`, you
+will have to make a duplicate declaration.
+
+```ts
+const shorten = replace(''typescript'', 'ts'')
+const toJavaScript = replace('typescript', 'javascript')
+```
+
+This can be solved by currying.
+
+```ts
+// currying replace function
+const fromTypescript = curryingReplace("typescript");
+const shorten = fromTypescript("ts");
+const toJavaScript = fromTypescript("javascript");
+
+shorten("typescript is great"); // 'ts is great'
+toJavaScript("typescript"); // 'javascript'
+```
+
+It's hard to make currying and the Type system coexist, but this project solves
+that problem. All currently supported functions are [here](#memo-api).
+
+Also, all pure functions can be synthesized to create a concise pipeline.
+
+The following example composes the String object methods of `trim`, `replace`
+and `toUpperCase` to create a new function.
+
+```ts
+const title = pipe(trim, replace("typescript", "ts"), toUpperCase);
+
+title(" typescript is great  "); // 'TS IS GREAT'
+```
+
+Since this project targets all build-in objects, it is recommended to use
+[pipe](https://github.com/TomokiMiyauci/fonction) for composite functions.
 
 ## :dizzy: Usage
 
@@ -106,6 +190,22 @@ The module that bundles the dependencies is obtained from
 </script>
 ```
 
+## :memo: API
+
+### String
+
+`endsWith`, `match`, `repeat`, `replace`, `startsWith`, `toLowerCase`,
+`toUpperCase`, `trimEnd`, `trimLeft`, `trimRight`, `trimStart`, `trim`
+
+### Symbol
+
+`description`
+
+### RegExp
+
+`dotAll`, `exec`, `flags`, `global`, `ignoreCase`, `lastIndex`, `multiline`,
+`source`, `sticky`, `test`, `unicode`
+
 ## :green_heart: Supports
 
 > ie is no longer supported to reduce bundle size.
@@ -151,3 +251,5 @@ Give a ⭐️ if this project helped you!
 Copyright © 2021-present [TomokiMiyauci](https://github.com/TomokiMiyauci).
 
 Released under the [MIT](./LICENSE) license
+
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B26231%2Fgithub.com%2FTomokiMiyauci%2Fcore-fn.svg?type=large)](https://app.fossa.com/projects/custom%2B26231%2Fgithub.com%2FTomokiMiyauci%2Fcore-fn?ref=badge_large)
