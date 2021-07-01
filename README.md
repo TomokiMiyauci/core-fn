@@ -194,9 +194,8 @@ The module that bundles the dependencies is obtained from
 
 ### String
 
-`charAt`, `endsWith`, `link`, `match`, `repeat`, `replace`, `startsWith`,
-`toLowerCase`, `toUpperCase`, `trimEnd`, `trimLeft`, `trimRight`, `trimStart`,
-`trim`
+`charAt`, `endsWith`, `match`, `repeat`, `replace`, `startsWith`, `toLowerCase`,
+`toUpperCase`, `trimEnd`, `trimLeft`, `trimRight`, `trimStart`, `trim`
 
 ### Symbol
 

@@ -12,4 +12,3 @@ export { trimEnd } from "./trim_end.ts";
 export { trimStart } from "./trim_start.ts";
 export { match } from "./match.ts";
 export { charAt } from "./char_at.ts";
-export { link } from "./link.ts";
