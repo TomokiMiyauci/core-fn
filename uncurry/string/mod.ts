@@ -5,3 +5,4 @@ export { endsWith } from "./ends_with.ts";
 export { repeat } from "./repeat.ts";
 export { match } from "./match.ts";
 export { charAt } from "./char_at.ts";
+export { link } from "./link.ts";
