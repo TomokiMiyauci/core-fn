@@ -1,3 +1,9 @@
+# [v1.0.0-beta.12](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2021-07-01)
+
+## ✨ New Features
+- [`b9bb4c8`](https://github.com/TomokiMiyauci/core-fn/commit/b9bb4c8)   Add String#charAt function 
+- [`724e0ab`](https://github.com/TomokiMiyauci/core-fn/commit/724e0ab)   Add String#link function
+
 # [v1.0.0-beta.11](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.10...v1.0.0-beta.11) (2021-06-29)
 
 ## ✨ New Features
