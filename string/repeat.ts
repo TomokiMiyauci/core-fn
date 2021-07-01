@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-import { repeat as _repeat } from "../non_curry/string/repeat.ts";
+import { repeat as _repeat } from "../uncurry/string/repeat.ts";
 
 /**
  * Returns a String value that is made from count copies appended together. If count is 0,

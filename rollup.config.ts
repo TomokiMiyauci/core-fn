@@ -6,7 +6,7 @@ import { dependencies, main, module } from "./package.json";
 
 const baseDir = resolve(__dirname);
 const inputFilePath = resolve(baseDir, "mod.ts");
-const nonCurryInputFilePath = resolve(baseDir, "non_curry", "mod.ts");
+const nonCurryInputFilePath = resolve(baseDir, "uncurry", "mod.ts");
 const banner =
   "/*! Copyright (c) 2021-present the Core-fn authors. All rights reserved. MIT license. */";
 const external = Object.keys(dependencies);
@@ -78,7 +78,7 @@ const config = [
     external,
 
     output: {
-      file: "dist/non-curry/index.cjs.js",
+      file: "dist/uncurry/index.cjs.js",
       format: "cjs",
       sourcemap: true,
       banner,
@@ -97,7 +97,7 @@ const config = [
     external,
 
     output: {
-      file: "dist/non-curry/index.es.js",
+      file: "dist/uncurry/index.es.js",
       format: "es",
       sourcemap: true,
       banner,

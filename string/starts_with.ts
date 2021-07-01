@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-import { startsWith as _startsWith } from "../non_curry/string/starts_with.ts";
+import { startsWith as _startsWith } from "../uncurry/string/starts_with.ts";
 
 /**
  * Checks if a string starts with the provided substring.

@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-import { test as _test } from "../non_curry/regexp/test.ts";
+import { test as _test } from "../uncurry/regexp/test.ts";
 
 /**
  * whether a given `string` matches a given regular expression.

@@ -10,8 +10,8 @@
       "./": [
         "dist/index.es.d.ts"
       ],
-      "non-curry": [
-        "dist/non-curry/index.es.d.ts"
+      "uncurry": [
+        "dist/uncurry/index.es.d.ts"
       ]
     }
   },
@@ -20,9 +20,9 @@
       "require": "./dist/index.cjs.js",
       "import": "./dist/index.es.js"
     },
-    "./non-curry": {
-      "require": "./dist/non-curry/index.cjs.js",
-      "import": "./dist/non-curry/index.es.js"
+    "./uncurry": {
+      "require": "./dist/uncurry/index.cjs.js",
+      "import": "./dist/uncurry/index.es.js"
     }
   },
   "sideEffects": false,

@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-import { match as _match } from "../non_curry/string/match.ts";
+import { match as _match } from "../uncurry/string/match.ts";
 
 /**
  * Matches a string with a regular expression, and returns an array containing the results of that search.

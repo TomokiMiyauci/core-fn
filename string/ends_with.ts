@@ -1,6 +1,6 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 import { curry } from "../deps.ts";
-import { endsWith as _endsWith } from "../non_curry/string/ends_with.ts";
+import { endsWith as _endsWith } from "../uncurry/string/ends_with.ts";
 
 /**
  * Checks if a string ends with the provided substring.

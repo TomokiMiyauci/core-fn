@@ -2,7 +2,7 @@
 
 import { curry } from "../deps.ts";
 
-import { includes as _includes } from "../non_curry/common/includes.ts";
+import { includes as _includes } from "../uncurry/common/includes.ts";
 
 /**
  * Checks if value is in collection.

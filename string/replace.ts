@@ -1,7 +1,7 @@
 // Copyright 2021-present the Core-fn authors. All rights reserved. MIT license.
 
 import { curry } from "../deps.ts";
-import { replace as _replace } from "../non_curry/string/replace.ts";
+import { replace as _replace } from "../uncurry/string/replace.ts";
 
 /**
 * Replaces matches for `from` in string or RegExp with `to`.
