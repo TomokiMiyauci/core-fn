@@ -2,3 +2,4 @@
 export { length } from "./length.ts";
 export { includes } from "./includes.ts";
 export { map } from "./map.ts";
+export { slice } from "./slice.ts";

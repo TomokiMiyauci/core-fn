@@ -208,7 +208,7 @@ The module that bundles the dependencies is obtained from
 
 ### Common(Methods or properties of multiple types)
 
-`includes`, `length`, `map`
+`includes`, `length`, `map`, `slice`
 
 ## :green_heart: Supports
 
