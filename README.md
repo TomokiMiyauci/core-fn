@@ -206,9 +206,9 @@ The module that bundles the dependencies is obtained from
 `dotAll`, `exec`, `flags`, `global`, `ignoreCase`, `lastIndex`, `multiline`,
 `source`, `sticky`, `test`, `unicode`
 
-### Common(Same method or property name)
+### Common(Methods or properties of multiple types)
 
-`includes`, `length`
+`includes`, `length`, `map`
 
 ## :green_heart: Supports
 
