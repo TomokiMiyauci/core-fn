@@ -1,3 +1,11 @@
+# [v1.0.0-beta.14](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.13...v1.0.0-beta.14) (2021-07-02)
+
+## ✨ New Features
+- [`2c53527`](https://github.com/TomokiMiyauci/core-fn/commit/2c53527)   Add String, Array, TypedArray, ..., #slice function 
+
+## 🐛 Bug Fixes
+- [`4778719`](https://github.com/TomokiMiyauci/core-fn/commit/4778719)   Remove default parameter
+
 # [v1.0.0-beta.13](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2021-07-02)
 
 ## ✨ New Features
