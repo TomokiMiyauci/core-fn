@@ -23,9 +23,9 @@ const slice = <
     | SharedArrayBuffer
     | Blob,
 >(
-  start: number | undefined = 0,
-  end: number | undefined = Infinity,
+  start: number | undefined,
+  end: number | undefined,
   val: T,
-): T => val.slice(start, end) as T;
+): T => val.slice(start ?? 0, end) as T;
 
 export { slice };
