@@ -1,3 +1,8 @@
+# [v1.0.0-beta.13](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.12...v1.0.0-beta.13) (2021-07-02)
+
+## ✨ New Features
+- [`22894e6`](https://github.com/TomokiMiyauci/core-fn/commit/22894e6)   Add TypedArray and Array#map function
+
 # [v1.0.0-beta.12](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.11...v1.0.0-beta.12) (2021-07-01)
 
 ## ✨ New Features
