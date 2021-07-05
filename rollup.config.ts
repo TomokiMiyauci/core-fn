@@ -3,6 +3,7 @@ import { resolve } from "path";
 import { terser } from "rollup-plugin-terser";
 import replace from "@rollup/plugin-replace";
 import { dependencies, main, module } from "./package.json";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 const baseDir = resolve(__dirname);
 const inputFilePath = resolve(baseDir, "mod.ts");
@@ -30,6 +31,7 @@ const config = [
         }),
       }),
       terser(),
+      nodeResolve(),
     ],
 
     external,
@@ -49,6 +51,7 @@ const config = [
         transpiler: "babel",
       }),
       terser(),
+      nodeResolve(),
     ],
 
     external,
@@ -73,6 +76,7 @@ const config = [
         }),
       }),
       terser(),
+      nodeResolve(),
     ],
 
     external,
@@ -92,6 +96,7 @@ const config = [
         transpiler: "babel",
       }),
       terser(),
+      nodeResolve(),
     ],
 
     external,
