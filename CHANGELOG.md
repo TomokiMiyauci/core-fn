@@ -1,3 +1,8 @@
+# [v1.0.0-beta.16](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.15...v1.0.0-beta.16) (2021-11-09)
+
+## 🐛 Bug Fixes
+- [`50c91f0`](https://github.com/TomokiMiyauci/core-fn/commit/50c91f0)   Bundle all depencendy for avoid recursive import
+
 # [v1.0.0-beta.15](https://github.com/TomokiMiyauci/core-fn/compare/v1.0.0-beta.14...v1.0.0-beta.15) (2021-07-05)
 
 ## 🐛 Bug Fixes

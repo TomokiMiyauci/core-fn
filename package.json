@@ -1,7 +1,7 @@
 {
   "name": "core-fn",
   "description": "A collection of built-in object method and property as currying function",
-  "version": "1.0.0-beta.15",
+  "version": "1.0.0-beta.16",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.es.d.ts",
@@ -32,8 +32,7 @@
     "prepare": "husky install",
     "build": "rollup -c rollup.config.ts"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "curry-rice": "^1.0.0",
     "@commitlint/cli": "^12.1.4",
